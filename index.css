@@ -46,7 +46,49 @@ width: 80%;
 margin: 0 auto;
 margin-top: 4rem;
 }
+.menu_3puntos{
+  width: 25rem;
+  height: 23rem;
+  background: #EEEDEE;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  margin-top: 3rem;
+  margin-right: 4rem;
+  border-radius: 3rem;
+  padding: 5rem;
+  display: none;
 
+}
+.imgs_individual_menu_redondo {
+    height: 65%;
+}
+
+.imgs_individual_tresputnos_menu_redondo {
+    height: 65%;
+}
+.imgs_individual_tresputnos_menu_redondo:hover + .menu_3puntos, .img_3punts:hover + .menu_3puntos{
+  display: block;
+}
+.imgs_individual_emergencia_menu_redondo{
+  height: 100%;
+}
+.icona_menu3{
+  width: 5rem;
+  margin-right: 4rem;
+
+}
+.letra_menu{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-bottom: 4rem;
+
+
+}
 .apartats_registre{
   width: 80%;
   margin: 0 auto;
@@ -686,25 +728,32 @@ padding-left: 25%;
 padding-top: 30%;
 
 }
-#logo_entrada_intro{
-  width: 80%;
-  height: 60rem;
+html, body {
+height: 100%;
+width: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+
+
 }
 .animated {
-            background-image: url(IMG/logo.png);
-            background-repeat: no-repeat;
-            background-position: relative;
-            padding-top:95px;
-            margin-bottom:60px;
-            -webkit-animation-duration: 10s;
-            animation-duration: 5s;
-            -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-            position: relative;
-            top: 30rem;
-            left: 35%;
-
-         }
+    background-image: url(img/logo.png);
+    background-repeat: no-repeat;
+    background-position: relative;
+    background-size: contain;
+    -webkit-animation-duration: 10s;
+    animation-duration: 6s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    margin-left: auto;
+    margin-right: auto;
+    width: 454px;
+    height: 140px;
+    margin-top: 50%;
+  }
 @-webkit-keyframes fadeIn {
            0% {opacity: 0;
            with}
@@ -729,11 +778,14 @@ padding-top: 30%;
   font-family: 'Montserrat', sans-serif;
   font-size: 50pt;
   text-align: center;
+  height: 3.5rem;
+  color: #53CA98;
 }
 #text_entra_benvinguts{
   font-family: 'Montserrat', sans-serif;
   font-size: 30pt;
     text-align: center;
+    color: #53CA98;
 
 }
 
@@ -1298,16 +1350,7 @@ display: flex;
     padding-right: 2rem;
 }
 
-.imgs_individual_menu_redondo {
-    height: 65%;
-}
 
-.imgs_individual_tresputnos_menu_redondo {
-    height: 65%;
-}
-.imgs_individual_emergencia_menu_redondo{
-  height: 100%;
-}
 div.scrollmenu {
 
   overflow: auto;
@@ -1767,7 +1810,6 @@ margin-top: 4rem;
 .div_general_imatges{
   width: 26rem;
   height: 21rem;
-  background-color: red;
   float: left;
   border-radius: 3rem;
   margin-left: 3rem;
